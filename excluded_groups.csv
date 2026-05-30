@@ -1,0 +1,8 @@
+group,score,gap_from_average,population_group
+General Population,73.6,0,Benchmark
+People with Disability,63.8,9.8,Excluded group
+First Nations Australians,63.4,10.2,Excluded group
+Low Income Households,58.0,15.6,Excluded group
+Older Australians,61.5,12.1,Excluded group
+Regional Australians,68.2,5.4,Location group
+Remote Australians,64.9,8.7,Location group

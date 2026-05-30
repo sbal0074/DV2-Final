@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia's Digital Divide</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5/build/vega.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5/build/vega-lite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6/build/vega-embed.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Australia's Digital Divide</h1>
+
+    <p>
+        Australia is one of the most digitally connected nations in the world,
+        yet access to technology and high-quality internet is still unequal.
+        A digital inclusion score measures how well people can access, afford
+        and use digital technologies. Higher scores suggest stronger digital
+        participation, while lower scores reveal communities that face barriers
+        to online education, employment, healthcare and communication.
+    </p>
+</header>
+
+<section>
+    <div class="section-number">01</div>
+    <h2>Australia is highly connected overall</h2>
+
+    <p>
+        Australia has a strong national digital inclusion score, but the national
+        average hides clear differences between states, regions and social groups.
+        This story explores where the divide exists, why it happens and who is
+        most affected.
+    </p>
+
+    <div class="stat-grid">
+        <div class="stat-card">
+            <h3>73.6</h3>
+            <p>National Digital Inclusion Score</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>79.5</h3>
+            <p>Highest Score (ACT)</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>69.4</h3>
+            <p>Lowest Score (Tasmania)</p>
+        </div>
+    </div>
+</section>
+
+<div class="chart-row">
+
+    <section>
+        <div class="section-number">02</div>
+        <h2>Digital inclusion differs across Australia</h2>
+
+        <p>
+            The map shows that digital inclusion is not evenly distributed.
+            Metropolitan and higher-income states generally perform better, while
+            regional-heavy areas face greater barriers.
+        </p>
+
+        <div class="chart-box">
+            <div id="map_vis"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-number">03</div>
+        <h2>States can be directly compared</h2>
+
+        <p>
+            Comparing states side-by-side makes the gap clearer. The ACT has the
+            strongest score, while Tasmania records the lowest, showing that
+            digital participation varies across the country.
+        </p>
+
+        <div class="chart-box">
+            <div id="bar_vis"></div>
+        </div>
+    </section>
+
+</div>
+
+<div class="chart-row">
+
+    <section>
+        <div class="section-number">04</div>
+        <h2>Income strongly influences digital inclusion</h2>
+
+        <p>
+            Higher-income households are more likely to afford reliable internet,
+            newer devices and digital education. This creates a strong connection
+            between wealth and digital participation.
+        </p>
+
+        <div class="chart-box">
+            <div id="scatter_vis"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-number">05</div>
+        <h2>Income inequality exists between states</h2>
+
+        <p>
+            Median household income varies significantly across Australia. Since
+            affordability is a major part of digital inclusion, economic inequality
+            directly affects who can participate online.
+        </p>
+
+        <div class="chart-box">
+            <div id="gap_vis"></div>
+        </div>
+    </section>
+
+</div>
+
+<div class="chart-row">
+
+    <section>
+        <div class="section-number">06</div>
+        <h2>Digital inclusion has improved over time</h2>
+
+        <p>
+            Australia has experienced steady improvements in digital inclusion
+            over time due to expanding internet access, smartphone adoption,
+            online education and digital government services. The graph also
+            includes an estimated global benchmark, showing that Australia
+            continues to perform above broader international participation levels.
+        </p>
+
+        <div class="chart-box">
+            <div id="line_vis"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-number">07</div>
+        <h2>The NBN accelerated internet access</h2>
+
+        <p>
+            The National Broadband Network significantly improved internet
+            access across Australia, but connection quality still differs
+            between technologies. Fibre connections generally provide faster
+            and more reliable performance, while fixed wireless services often
+            experience lower speeds and stability in regional communities.
+        </p>
+
+        <div class="chart-box">
+            <div id="area_vis"></div>
+        </div>
+    </section>
+
+</div>
+
+<div class="chart-row">
+
+    <section>
+        <div class="section-number">08</div>
+        <h2>Some communities are further behind</h2>
+
+        <p>
+            The digital divide is not only geographic. Low-income households,
+            older Australians, First Nations Australians and people with
+            disability continue to record lower digital inclusion scores.
+            This highlights that affordability, accessibility and digital
+            skills remain major barriers for disadvantaged communities.
+        </p>
+
+        <div class="chart-box">
+            <div id="bubble_vis"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-number">09</div>
+        <h2>Regional Australia faces additional barriers</h2>
+
+        <p>
+            Regional and remote communities often face weaker infrastructure,
+            lower service quality and affordability pressures compared to
+            metropolitan areas. Greater reliance on wireless technologies and
+            reduced access to high-speed fibre networks contribute to lower
+            digital participation outside Australia's largest cities.
+        </p>
+
+        <div class="chart-box">
+            <div id="region_vis"></div>
+        </div>
+    </section>
+
+</div>
+
+<div class="chart-row">
+
+    <section>
+        <div class="section-number">10</div>
+        <h2>The divide is made up of different weaknesses</h2>
+
+        <p>
+            Digital inclusion depends on access, affordability and digital ability.
+            This heatmap shows that states can perform well in one area while
+            still having weaknesses in another.
+        </p>
+
+        <div class="chart-box">
+            <div id="heatmap_vis"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-number">11</div>
+        <h2>Digital inclusion has multiple components</h2>
+
+        <p>
+            Access alone is not enough. People also need affordable connections
+            and the skills required to use digital services confidently and safely.
+        </p>
+
+        <div class="chart-box">
+            <div id="stacked_vis"></div>
+        </div>
+    </section>
+
+</div>
+
+<div class="chart-row">
+
+    <section>
+        <div class="section-number">12</div>
+        <h2>Some groups remain digitally excluded</h2>
+
+        <p>
+            Despite national improvements, disadvantaged groups still experience
+            lower digital participation. This shows that infrastructure progress
+            alone does not solve the digital divide.
+        </p>
+
+        <div class="chart-box">
+            <div id="divide_vis"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-number">13</div>
+        <h2>Connection technology also matters</h2>
+
+        <p>
+            Different internet technologies provide different performance levels.
+            Fibre connections generally offer faster and more reliable internet
+            than older copper-based systems.
+        </p>
+
+        <div class="chart-box">
+            <div id="tech_vis"></div>
+        </div>
+
+        <div class="insight-box">
+            <strong>Key Insight</strong><br>
+            Fibre connections provide substantially higher speeds than
+            fixed wireless and satellite technologies, helping reduce
+            digital exclusion in connected areas.
+        </div>
+    </section>
+
+</div>
+
+<section class="conclusion-section">
+    <div class="section-number">14</div>
+
+    <h2>Digital inclusion is about more than internet access</h2>
+
+    <p>
+        Australia's digital landscape has improved significantly, but the benefits
+        are not shared equally. Closing the digital divide requires continued
+        investment in affordable internet, regional infrastructure, education and
+        digital skills so all Australians can participate fully in modern society.
+    </p>
+</section>
+
+<section class="Takeaway-section">
+
+    <div class="section-number">15</div>
+
+    <h2>Key Takeaways</h2>
+
+    <p>
+        <strong>Income remains one of the strongest predictors of digital inclusion.</strong>
+        States and communities with higher household incomes consistently achieve
+        better digital participation outcomes, highlighting the importance of
+        affordability in accessing digital services.
+    </p>
+
+    <p>
+        <strong>Geography continues to shape opportunity.</strong>
+        Regional and remote Australians face additional challenges due to
+        infrastructure limitations, service quality differences and reduced
+        access to high-speed broadband technologies.
+    </p>
+
+    <p>
+        <strong>The NBN has significantly improved national connectivity.</strong>
+        Broadband access has expanded across Australia, but differences in
+        connection technologies mean internet quality and reliability still vary
+        between communities.
+    </p>
+
+    <p>
+        <strong>Vulnerable groups remain at greater risk of exclusion.</strong>
+        Low-income households, older Australians, First Nations Australians and
+        people with disability continue to record lower digital inclusion scores
+        than the national average.
+    </p>
+
+    <p>
+        <strong>Digital inclusion requires more than internet access.</strong>
+        Meaningful participation in modern society depends on affordable
+        services, digital skills and reliable infrastructure working together to
+        ensure all Australians can benefit from the digital economy.
+    </p>
+
+</section>
+
+<footer>
+    <div class="footer-left">
+        <p><strong>Author:</strong> Sanjiv Balachandar</p>
+        <p>FIT2179 Data Visualisation 2</p>
+        <p>Studio Number 3</p>
+        <p>Monash University | 2026</p>
+    </div>
+
+    <div class="sources">
+        <h3>Data Sources</h3>
+
+        <ul>
+            <li><a href="https://digitalinclusionindex.org.au" target="_blank">Australian Digital Inclusion Index</a></li>
+            <li><a href="https://www.abs.gov.au" target="_blank">Australian Bureau of Statistics</a></li>
+            <li><a href="https://www.accc.gov.au" target="_blank">ACCC Measuring Broadband Australia</a></li>
+            <li><a href="https://www.nbnco.com.au" target="_blank">NBN Co Data</a></li>
+            <li><a href="https://www.abs.gov.au/statistics/industry/technology-and-innovation/household-use-information-technology/latest-release" target="_blank">ABS Household Use of Information Technology</a></li>
+            <li><a href="https://www.magnific.com/free-vector/futuristic-background-design_7636213.htm#fromView=keyword&page=1&position=33&uuid=26fd71e3-ef5b-4b5c-a3e3-754422a4b92c&query=4k+website+background" target="_blank">Background Image</a></li>
+            <li><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx" target="_blank">International Telecommunication Union (ITU) Global ICT Statistics</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js_visualisations.js"></script>
+
+</body>
+</html>
